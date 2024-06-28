@@ -6,13 +6,13 @@
         
         <div class="container-fluid">
           
-          <a class="navbar-brand text-white" href="index.html">
-            <img src="img/logoTecno3F.png" alt="Logo" width="120">Trabajo Final Integrador 2024 - PHP Avanzado</a>
+          <a class="navbar-brand text-white" href="index.php">
+            <img src="../img/logoTecno3F.png" alt="Logo" width="120">Trabajo Final Integrador 2024 - PHP Avanzado</a>
           
             <div class="collapse navbar-collapse justify-content-end">
             
                 <div class="navbar-nav">
-                <a class="nav-link text-white-50" aria-current="page" href="index.html">Enlace 1</a>
+                <a class="nav-link text-white-50" aria-current="page" href="index.php">Enlace 1</a>
                 <a class="nav-link text-white-50" href="#">Enlace 2</a>
                 <a class="nav-link text-white-50" href="#">Enlace 3</a>
                 <a class="nav-link text-white-50" href="#">Enlace 4</a>

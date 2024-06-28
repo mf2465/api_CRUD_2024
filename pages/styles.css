@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://proyectogaribaldi.000webhostapp.com/img/ba1.jpg');
+background-image: url('../img/fondoLogin.png');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
