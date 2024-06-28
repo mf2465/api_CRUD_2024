@@ -67,7 +67,7 @@ require 'pages/menunav.php';
 
 </main>
 <?php 
-require 'listado.php'; 
+require 'delelistar.php'; 
 ?> 
 <br>
 <br>
