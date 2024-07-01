@@ -3,7 +3,7 @@ class Database{
 
 private $host = 'localhost';
 private $user = 'id22362038_rest_api_demo';
-private $password = '$Costamar393';
+private $password = 'Costamar393$';
 private $database = 'id22362038_rest_api_demo'; 
 
 public function getConnection(){ 
