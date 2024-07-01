@@ -48,7 +48,14 @@ if ($data && isset($data['items']) && !empty($data['items'])) {
 <body>
     
 <div class="container">
-    <h2>Listado de Productos</h2>
+    <div class="row mb-3">
+        <div class="col">
+            <h2 class="mb-0">Listado de Productos</h2>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary" onclick="showLoginAlert()">Agregar Nuevo</button>
+        </div>
+    </div>
     <table class="table align-middle">
     <thead>
     <tr class="table-warning">
@@ -73,14 +80,20 @@ if ($data && isset($data['items']) && !empty($data['items'])) {
                     <td><?php echo $item['category_id']; ?></td>
                     <td><?php echo $item['created']; ?></td>
                     <td><?php echo $item['modified']; ?></td>
-                    <td><button type="button" disabled="disabled" class="btn btn-outline-primary"><?php echo"<a href='editar.php?id=".$item['id']."'>" ?>Editar</button>
+                    <td><button type="button" onclick="showLoginAlert()" class="btn btn-outline-primary">Editar</button>
 			        </td>
-			        <td><button type="button" disabled="disabled" class="btn btn-outline-danger"><?php echo"<a href='eliminar.php?id=".$item['id']."'>" ?>Eliminar</button>
+			        <td><button type="button" onclick="showLoginAlert()" class="btn btn-outline-danger">Eliminar</button>
 			        </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
     </div>
+    
+<script>
+    function showLoginAlert() {
+        alert("Necesita loguearse para activar esta función");
+    }
+</script>    
 </body>
 </html>

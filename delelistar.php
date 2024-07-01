@@ -41,7 +41,14 @@ if ($data && isset($data['items']) && is_array($data['items'])) {
 </head>
 <body>
     <div class="container">
-        <h2>Listado de Productos</h2>
+    <div class="row mb-3">
+        <div class="col">
+            <h2 class="mb-0">Listado de Productos</h2>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary" onclick="location.href='ingresar.php'">Agregar Nuevo</button>
+        </div>
+    </div>
         <table class="table align-middle">
             <thead>
                 <tr class="table-warning">
@@ -67,7 +74,7 @@ if ($data && isset($data['items']) && is_array($data['items'])) {
                         <td><?php echo htmlspecialchars($item['created']); ?></td>
                         <td><?php echo htmlspecialchars($item['modified']); ?></td>
                         <td>
-                            <a href="<?php echo htmlspecialchars($item['id']); ?>" class="btn btn-outline-primary">Editar</a>
+                            <a href='modificar.php?id=<?php echo htmlspecialchars($item['id']); ?>' class="btn btn-outline-primary">Editar</a>
                         </td>
                         <td>
                             <button type="button" class="btn btn-outline-danger" onclick="deleteItem(<?php echo $item['id']; ?>)">Eliminar</button>
@@ -80,7 +87,11 @@ if ($data && isset($data['items']) && is_array($data['items'])) {
 
     <script>
         function deleteItem(id) {
+            
             if (confirm('¿Estás seguro de eliminar este item?')) {
+                
+                alert('ID a eliminar: ' + id);
+                
                 fetch('https://apicrud2024.000webhostapp.com/vista/delete.php', {
                     method: 'POST',
                     headers: {

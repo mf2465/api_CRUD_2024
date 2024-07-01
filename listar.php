@@ -48,7 +48,14 @@ if ($data && isset($data['items']) && !empty($data['items'])) {
 <body>
     
 <div class="container">
-    <h2>Listado de Productos</h2>
+    <div class="row mb-3">
+        <div class="col">
+            <h2 class="mb-0">Listado de Productos</h2>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary" onclick="location.href='ingresar.php'">Agregar Nuevo</button>
+        </div>
+    </div>
     <table class="table align-middle">
     <thead>
     <tr class="table-warning">
