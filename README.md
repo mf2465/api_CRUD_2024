@@ -3,6 +3,7 @@ https://apicrud2024.000webhostapp.com
 
   > [!NOTE]
   > Se encuentra en desarrollo y progresivamente habrán actualizaciones hasta llegar a la fecha de entrega.
+  > 
   > El sitio se hospeda en un servidor gratuito. Su almacenamiento vence el 24/6/2025. 
 
 Se recomienda navegarlo desde PC, ya que no está en Responsive para Tablet o celular hasta este momento.
