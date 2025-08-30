@@ -4,7 +4,7 @@
 	
 	$host="localhost";
 	$user="id22362038_rest_api_demo";
-	$pass="Costamar393$";
+	$pass="";
 	$DB="id22362038_rest_api_demo";
 	$tabla1 = "items";
 	
@@ -24,3 +24,4 @@
 	$insertar = mysqli_query($conexion,$query);    
 	
 	?>
+
